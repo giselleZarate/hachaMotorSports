@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* EMPIEZA HEADER */
+
+.portada{
+    width: 100%;
+}
+
+.portada img {
+    width: 50%;
+    height: 100%; 
+}
+
+.nav{
+    width: 100%;
+    background-color: gray;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin:0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    display: block; 
+}
+
+.menu a:hover {
+    color: red;
+}
+
+.submenu {
+    width: 100%;
+    padding: 0;
+    background: rgba(128, 128, 128, 0.884);
+    position: absolute;
+    visibility: hidden;
+    list-style-type: none;
+    opacity: 0;
+    transition: opacity 1s; 
+}
+
+.submenu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.subMenu a:hover {
+    color:red;
+} 
+
+.menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    z-index:2;
+}
+
+/* TERMINA HEADER */
+
+
+/* EMPIEZA MAIN */
+.main{
+    z-index:1;
+}
+.contenedorPadre{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+.submenues{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 2rem auto;
+    justify-content:space-around;
+    text-align: justify;
+    
+}
+
+.card{
+    border: 2px;
+    border: solid;
+    border-color: gray;
+    border-radius: 0.5rem;
+}
+.margen{
+    margin-top: 2rem;
+}
+
+h5{
+    font-weight: black ;
+    font-size: 2.3rem!important;
+    font-style: roboto;
+}  
+
+
+/* EMPIEZA CONTACTO */
+
+#contacto{
+    display: flex;
+}
+.formulario{
+    display: flex;
+    align-items: left;
+}
+.todo{
+    display: flex;
+}
+.button{
+    background-color: gray;
+}
+
+
+/*
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom:2.5vw;
+    right: 2.5vw;
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+/* TERMINA MAIN */
+
+/* EMPIEZA FOOTER */
+
+footer{
+    width: 100%;  
+    background-color: red;
+}
+
+footer div ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer div ul li a i {
+    font-size: 2rem;
+    color: white;
+    margin: 1rem;
+    transition: .5s all;
+}
+
+footer div ul li a i:hover{
+    color:black
+}
+
+/* TERMINA FOOTER */
+
+
+/* EMPIEZA PAGINA TIENDA */
+
+/*
+#navTienda ul {
+}
+
+*/
+
+#navTienda ul li{
+    text-align: start;
+}
+
+main{
+    display:flex;
+}
+
+.secciones{
+    display:flex;
+}
+
+
+.acc{
+
+    background-color: blueviolet;
+    font-size: 20px;
+}
+/*
+.contenedores{
+    height: auto;
+    width: 100%;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.item{
+    height: 150px;
+    background-color: red;
+}
+
+/*NO BORRAR MENU HAMBURGUES*/
+
+#logo{
+    height: 20vw;
+}
+#contenedorGral{
+    background-color: whitesmoke;
+}
+.navbar{
+    padding:0;
+}
+.navbar-brand{
+    padding:0;
+}
+
+/*Empieza MediaQuery Nav min 768*/
+@media only screen and (min-width: 768px) {
+   
+    #logo{
+        margin: 0;
+        margin-bottom: 0rem;
+        height: 13rem;
+    }
+   
+    #contenedorGral{
+        display:flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding:0;
+    }
+
+    #navbarSupportedContent{
+        background-color:gray;
+        height: fit-content;
+        width: 100%;
+        height: 3.5rem;
+    }
+
+    .navbar-nav{
+        width: 100%;
+        padding:0;
+        justify-content: center;
+    }
+
+    .nav-item{
+        display: flex;
+        justify-content: center;
+    }
+   
+    .nav-link{
+        color: white !important;
+        font-size: 1.5rem;  
+        padding: 0 0.3rem !important;
+    }
+
+    .nav-link:hover{
+        color: red!important;
+    }
+
+    .active{
+        color: black !important;
+    }
+}
+/*Termina MediaQuery Nav min 768*/
